@@ -27,6 +27,7 @@ class ContactController extends Controller
                 "name" => "required",
                 "email" => "required",
                 "subject" => "required",
+                "message" => "required",
             ]
         );
 
@@ -38,12 +39,12 @@ class ContactController extends Controller
                 "name" => $request->name,
                 "email" => $request->email,
                 "subject" => $request->subject,
-
+                "message" => $request->message,
             ]);
         }
       
 
-        return view('about');
+        return view('contact');
         
     }
 

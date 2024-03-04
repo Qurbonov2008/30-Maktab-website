@@ -12,9 +12,12 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return About::all();
+        // return About::all();
     }
-
+    public function img()
+    {
+        return About::all('image');
+    }
     /**
      * Store a newly created resource in storage.
      */

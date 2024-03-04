@@ -28,7 +28,7 @@ class EmailController extends Controller
             ]
         );
             Email::create([
-                "email" => $request->email,
+                "email" => $request->email ?? view('index'),
             ]);
             return view('index');
 

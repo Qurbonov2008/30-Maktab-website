@@ -13,25 +13,27 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="img/carousel-1.jpg"
+                    <img class="position-relative w-100" src="img/carousel-2.jpg"
                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-md-3">Eng yaxshi oline kurslar</h5>
                             <h1 class="display-3 text-white mb-md-4">
                                 Sizning uyingizdan eng yaxshi ta'lim</h1>
-                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Batafsil ma'lumot</a>
+                            <a href=""
+                                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Batafsil ma'lumot</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="img/carousel-2.jpg"
+                    <img class="position-relative w-100" src="img/course-5.jpg"
                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-md-3">Eng yaxshi oline kurslar</h5>
                             <h1 class="display-3 text-white mb-md-4">Eng yaxshi onlayn ta'lim platformasi</h1>
-                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Batafsil ma'lumot</a>
+                            <a href=""
+                                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Batafsil ma'lumot</a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +45,8 @@
                             <h5 class="text-white text-uppercase mb-md-3">Eng yaxshi oline kurslar</h5>
                             <h1 class="display-3 text-white mb-md-4">
                                 Uydan o'rganishning yangi usuli</h1>
-                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Batafsil ma'lumot</a>
+                            <a href=""
+                                class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Batafsil ma'lumot</a>
                         </div>
                     </div>
                 </div>
@@ -179,7 +182,8 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
-                                        <small>(250)</small></h6>
+                                        <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -198,7 +202,8 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
-                                        <small>(250)</small></h6>
+                                        <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -217,7 +222,8 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
-                                        <small>(250)</small></h6>
+                                        <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -236,7 +242,8 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
-                                        <small>(250)</small></h6>
+                                        <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -255,7 +262,8 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
-                                        <small>(250)</small></h6>
+                                        <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -274,7 +282,8 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5
-                                        <small>(250)</small></h6>
+                                        <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -310,28 +319,28 @@
                             <h1 class="m-0">Hozir roʻyxatdan oʻting</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
-                            @if($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                    <li>{{$error}}</li>
-                                        
-                                    @endforeach
-                                </ul>
-                            </div>
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
                             @endif
                             <form action="create_list" method="POST">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="text"  class="form-control border-0 p-4" name="name" placeholder="Your name"
-                                        required="required"  value="{{old('name')}}"/>
+                                    <input type="text" class="form-control border-0 p-4" name="name"
+                                        placeholder="Your name" required="required" value="{{ old('name') }}" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email"  class="form-control border-0 p-4" name="email" placeholder="Your email"
-                                        required="required" value="{{old('email')}}" />
+                                    <input type="email" class="form-control border-0 p-4" name="email"
+                                        placeholder="Your email" required="required" value="{{ old('email') }}" />
                                 </div>
                                 <div class="form-group">
-                                    <select   name="subject" class="custom-select border-0 px-4" style="height: 47px;" value="{{old('subject')}}" required>
+                                    <select name="subject" class="custom-select border-0 px-4" style="height: 47px;"
+                                        value="{{ old('subject') }}" required>
                                         <option selected>Kurlar ro'yxati</option required>
                                         <option value="Matimatika">Matimatika</option required>
                                         <option value="Ingiliz tili">Inigliz tili</option required>
@@ -339,7 +348,7 @@
                                         <option value="Ona tili">Ona tili</option required>
                                         <option value="Informaatika">Informatika</option required>
                                         <option value="Adabuyot">Adabiyot</option required>
-                                        
+
                                     </select>
                                 </div>
                                 <div>

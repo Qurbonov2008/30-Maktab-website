@@ -13,7 +13,7 @@
                 <div class="col-lg-8">
                     <div class="contact-form bg-secondary rounded p-5">
                         <div id="success"></div>
-                        <form {{ route('contact_create') }} method="POST">
+                        <form action="contact_create" method="POST">
                             @csrf
                             <div class="control-group">
                                 <input name="name" type="text" class="form-control border-0 p-4" id="name"
@@ -39,8 +39,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-primary py-3 px-5" type="submit"
-                                    >Yubor</button>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Yubor</button>
                             </div>
                         </form>
                     </div>

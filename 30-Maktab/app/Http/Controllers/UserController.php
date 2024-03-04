@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class UserController extends Controller
 {
     public function index()
@@ -28,6 +29,6 @@ class UserController extends Controller
     }
     public function login()
     {
-        view('Auth.login');
+        view('login');
     }
 }

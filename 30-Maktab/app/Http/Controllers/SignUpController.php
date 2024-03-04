@@ -80,9 +80,9 @@ class SignUpController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Sign_up $sign_up)
+    public function show()
     {
-        //
+        return view('login');
     }
 
     /**

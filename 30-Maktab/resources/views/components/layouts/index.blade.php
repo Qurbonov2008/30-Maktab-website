@@ -74,7 +74,7 @@
             <div class="col-lg-3 d-none d-lg-block">
                 <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none"
                     data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
-                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Subjects</h5>
+                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Subjects</h5> 
                     <i class="fa fa-angle-down text-primary"></i>
                 </a>
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light"
@@ -93,7 +93,8 @@
                         <a href="" class="nav-item nav-link">Marketing</a>
                         <a href="" class="nav-item nav-link">Research</a>
                         <a href="" class="nav-item nav-link">SEO</a>
-                    </div>
+                        
+                </div>
                 </nav>
             </div>
             <div class="col-lg-9">
@@ -116,10 +117,13 @@
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
+                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
+                            href="{{ url('admin') }}">Admin panel</a>
                         @auth
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Salom $name</a>
+                            <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Salom $name</a>
                         @else
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="{{route('login')}}">Kirish</a>
+                            <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
+                                href="{{ route('login') }}">Kirish</a>
                         @endauth
                     </div>
                 </nav>
@@ -174,11 +178,11 @@
                 <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu
                     kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
                 <form action="{{ url('post_email') }}" method="POST">
-                    {{-- @csrf --}}
+                    @csrf
                     <div class="w-100">
                         <div class="input-group">
                             <input type="text" name="email" class="form-control border-light"
-                                style="padding: 30px;" placeholder="Your Email Address">
+                                style="padding: 30px;" placeholder="Your Email Address" required>
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary px-4">Jo'natish</button>
                 </form>
