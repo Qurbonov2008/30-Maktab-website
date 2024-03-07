@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use Illuminate\Http\Request;
 
 
@@ -9,7 +10,9 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $abouts =  About::limit(3)->get()->toArray();
+
+        return view('index', ['abouts'=>$abouts]);
     }
     public function show()
     {

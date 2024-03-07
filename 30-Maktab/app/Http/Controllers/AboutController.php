@@ -3,27 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AboutController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function about():View
     {
-        // return About::all();
+           $abouts =  About::limit(3)->get()->toArray();
+
+            return view('about', ['abouts'=>$abouts]);
     }
-    public function img()
-    {
-        return About::all('image');
-    }
-    /**
-     * Store a newly created resource in storage.
-     */
+   
+    
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -31,7 +30,7 @@ class AboutController extends Controller
      */
     public function show(About $about)
     {
-        //
+        
     }
 
     /**
@@ -48,5 +47,9 @@ class AboutController extends Controller
     public function destroy(About $about)
     {
         //
+    }
+    public function name()
+    {
+        return  About::all('name');
     }
 }

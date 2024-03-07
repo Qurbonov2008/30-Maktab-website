@@ -74,10 +74,11 @@
             <div class="col-lg-3 d-none d-lg-block">
                 <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none"
                     data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
-                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Subjects</h5> 
+                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Fanlar</h5>
                     <i class="fa fa-angle-down text-primary"></i>
                 </a>
-                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light"
+                <nav class="collapse position-absolute navbar 
+                navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light"
                     id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
                         <div class="nav-item dropdown">
@@ -93,8 +94,8 @@
                         <a href="" class="nav-item nav-link">Marketing</a>
                         <a href="" class="nav-item nav-link">Research</a>
                         <a href="" class="nav-item nav-link">SEO</a>
-                        
-                </div>
+
+                    </div>
                 </nav>
             </div>
             <div class="col-lg-9">
@@ -108,17 +109,15 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav py-0">
                             <a href="/" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="course.html" class="nav-item nav-link">Courses</a>
-                            <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                            <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+                            <a href="{{ route('course') }}" class="nav-item nav-link">Courses</a>
+                            <a href="{{ route('teacher') }}" class="nav-item nav-link">Teachers</a>
                             <div class="nav-item dropdown">
                                 <div class="dropdown-menu rounded-0 m-0">
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
-                            href="{{ url('admin') }}">Admin panel</a>
                         @auth
                             <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Salom $name</a>
                         @else
@@ -157,26 +156,27 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Bianing kursalar
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Bizning kurslar
                         </h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web
-                                Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps
-                                Design</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Matematika</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Ingiliz-tili</a>
                             <a class="text-white mb-2" href="#"><i
-                                    class="fa fa-angle-right mr-2"></i>Marketing</a>
+                                    class="fa fa-angle-right mr-2"></i>Rus-tili</a>
                             <a class="text-white mb-2" href="#"><i
-                                    class="fa fa-angle-right mr-2"></i>Research</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                                    class="fa fa-angle-right mr-2"></i>Ona-tili</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Informatika</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 mb-5">
-                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu
-                    kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">
+                    XABAR</h5>
+                <p>Bu joyga emailni kiritishingiz mumkin
+                    <br>
+                    Emailingiz ro'yxatga olinadi!
+                </p>
                 <form action="{{ url('post_email') }}" method="POST">
                     @csrf
                     <div class="w-100">
@@ -191,32 +191,6 @@
     </div>
     </div>
     </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-        style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by
-                    <a href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
     <!-- Footer End -->
 

@@ -1,6 +1,6 @@
 <x-layouts.index>
     <x-slot:title>
-        Buzga bog'lanish
+        Bizga bog'lanish
     </x-slot:title>
     <!-- Contact Start -->
     <div class="container-fluid py-5">
@@ -17,24 +17,24 @@
                             @csrf
                             <div class="control-group">
                                 <input name="name" type="text" class="form-control border-0 p-4" id="name"
-                                    placeholder="Your Name" required="required"
+                                    placeholder="Sizning ismingiz" required="required"
                                     data-validation-required-message="Please enter your name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input name="email" type="email" class="form-control border-0 p-4" id="email"
-                                    placeholder="Your Email" required="required"
+                                    placeholder="Sizning emailingiz" required="required"
                                     data-validation-required-message="Please enter your email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input name="subject" type="text" class="form-control border-0 p-4" id="subject"
-                                    placeholder="Subject" required="required"
+                                    placeholder="Kaspingiz" required="required"
                                     data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea name="message" class="form-control border-0 py-3 px-4" rows="5" id="message" placeholder="Message"
+                                <textarea name="message" class="form-control border-0 py-3 px-4" rows="5" id="message" placeholder="Izoh"
                                     required="required" data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
