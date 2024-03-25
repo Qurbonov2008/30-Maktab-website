@@ -28,7 +28,6 @@ Route::post('create_list', [SignUpController::class, 'store'])->name('create_ind
 Route::post('post_email', [EmailController::class, 'store'])->name('post_email');
 Route::get('testimonial', [AboutController::class, 'index'])->name('testimonial');
 Route::get('course', [PopularCoursesController::class, 'show'])->name('course');
-Route::get('teacher', [TeacherController::class, 'show'])->name('teacher');
 Route::get('contact', [UserController::class, 'conatact'])->name('contact');
 Route::get('login', [SignUpController::class, 'show'])->name('login');
 Route::post('register', [LoginController::class, 'store'])->name('register');
@@ -37,3 +36,7 @@ Route::post('contact_create', [ContactController::class, 'store'])->name('contac
 Route::get('admin', [AdminController::class, 'index'])->name('admin');
 Route::get('about', [AboutController::class, 'about'])->name('about');
 Route::get('about_name', [AboutController::class, 'name'])->name('about_name');
+
+// Admin
+Route::get('Admin' , [AdminController::class , 'index'])->name('Admin');
+Route::get('Admin_contact' , [ContactController::class , 'index'])->name('Admin_Contact');

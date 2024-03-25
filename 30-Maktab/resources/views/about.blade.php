@@ -58,15 +58,6 @@
                             <h1 class="m-0">Hozir roʻyxatdan oʻting</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
-                            @if ($errors->any())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
                             <form action="sign" method="POST">
                                 @csrf
                                 <div class="form-group">
@@ -85,7 +76,7 @@
                                         <option value="Ingiliz tili">Inigliz tili</option required>
                                         <option value="Rus tili">Rus tili</option required>
                                         <option value="Ona tili">Ona tili</option required>
-                                        <option value="Informaatika">Informatika</option required>
+                                        <option value="Inform   atika">Informatika</option required>
                                         <option value="Adabuyot">Adabiyot</option required>
 
                                     </select>

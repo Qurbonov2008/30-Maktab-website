@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\PopularCourses;
 use Illuminate\Http\Request;
 
 
@@ -10,9 +11,10 @@ class UserController extends Controller
 {
     public function index()
     {
-        $abouts =  About::limit(3)->get()->toArray();
+        $courses =  PopularCourses::limit(6)->get()->toArray();
 
-        return view('index', ['abouts'=>$abouts]);
+        return view('index', ['courses'=>$courses]);
+      
     }
     public function show()
     {

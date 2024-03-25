@@ -82,7 +82,7 @@
                     id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-toggle="dropdown">Web Design <i
+                            <a href="#" class="nav-link" data-toggle="dropdown">Web Dizayn <i
                                     class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                                 <a href="" class="dropdown-item">HTML</a>
@@ -111,7 +111,6 @@
                             <a href="/" class="nav-item nav-link">Home</a>
                             <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
                             <a href="{{ route('course') }}" class="nav-item nav-link">Courses</a>
-                            <a href="{{ route('teacher') }}" class="nav-item nav-link">Teachers</a>
                             <div class="nav-item dropdown">
                                 <div class="dropdown-menu rounded-0 m-0">
                                 </div>

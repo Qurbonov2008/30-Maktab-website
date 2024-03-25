@@ -30,10 +30,6 @@ class SignUpController extends Controller
             ]
         );
 
-        // if ($validator->fails()) {
-        //     return response()->json(["message" => "Malumotlarni to'liq kiriting"], 422);
-        // }
-
         if (!isset($validator)) {
             return view('index');
         } else {

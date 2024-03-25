@@ -14,9 +14,7 @@ class AboutController extends Controller
      */
     public function about():View
     {
-           $abouts =  About::limit(3)->get()->toArray();
-
-            return view('about', ['abouts'=>$abouts]);
+        return view('about');
     }
    
     
