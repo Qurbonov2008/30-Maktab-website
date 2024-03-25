@@ -9,13 +9,6 @@ use Illuminate\Support\Facades\Validator;
 
 class LoginController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $login = $request->validate([
@@ -30,25 +23,6 @@ class LoginController extends Controller
             "name" => "Salom",
         ])->onlyInput();
     }
-
-    /**
-     * Display the specified resource.
-     */
-    // public function show()
-    // {
-    //     return view('index');
-    // }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Login $login)
-    {
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Login $login)
     {
         return view('login');

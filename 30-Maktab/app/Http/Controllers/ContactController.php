@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        $contacts = Contact::get()->toArray();
+        $contacts = Contact::limit(100)->get()->toArray();
         return view('Admin.Contact.index' , ['$contacts' => $contacts]);
     }
     public function store(Request $request)

@@ -11,10 +11,9 @@ class UserController extends Controller
 {
     public function index()
     {
-        $courses =  PopularCourses::limit(6)->get()->toArray();
+        $courses =  PopularCourses::limit(6)->get();
 
         return view('index', ['courses'=>$courses]);
-      
     }
     public function show()
     {

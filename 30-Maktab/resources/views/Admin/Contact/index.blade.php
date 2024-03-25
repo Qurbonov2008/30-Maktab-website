@@ -32,8 +32,8 @@
                         <th>Izoh</th>
                     </tr>
                 </thead>
+                @foreach($contacts as $contact)
                 <tbody>
-                    @foreach($contacts as $contact)
                         <tr>
                         <th>{{$contact['id']}}</th>
                         <th>{{$contact['name']}}</th>
@@ -45,8 +45,8 @@
                             <a class='btn btn-danger btn-sm' href='/admin/contact/delete.php?id=$row[id]'>O'chirish</a>
                         </td>
                         </tr>
-                        @endforeach
-                </tbody>
+                    </tbody>
+                    @endforeach
             </table>
         </div>
 </body>

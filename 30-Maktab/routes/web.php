@@ -3,12 +3,10 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PopularCoursesController;
 use App\Http\Controllers\SignUpController;
-use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,7 +31,6 @@ Route::get('login', [SignUpController::class, 'show'])->name('login');
 Route::post('register', [LoginController::class, 'store'])->name('register');
 Route::post('sign', [SignUpController::class, 'sign'])->name('sign');
 Route::post('contact_create', [ContactController::class, 'store'])->name('contact_create');
-Route::get('admin', [AdminController::class, 'index'])->name('admin');
 Route::get('about', [AboutController::class, 'about'])->name('about');
 Route::get('about_name', [AboutController::class, 'name'])->name('about_name');
 
