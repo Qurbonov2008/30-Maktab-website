@@ -111,6 +111,7 @@
                             <a href="/" class="nav-item nav-link">Home</a>
                             <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
                             <a href="{{ route('course') }}" class="nav-item nav-link">Courses</a>
+                            <a href="{{ route('teacher') }}" class="nav-item nav-link">Teachers</a>
                             <div class="nav-item dropdown">
                                 <div class="dropdown-menu rounded-0 m-0">
                                 </div>
