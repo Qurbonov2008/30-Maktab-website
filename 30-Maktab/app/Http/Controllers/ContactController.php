@@ -76,9 +76,10 @@ public function delete($id)
 
     return redirect()->route('Admin.Contact.index');
 }
-public function get_update()
+public function get_update($id)
 {
-    return view('Admin.Contact.edit');
+    $contacts = Contact::find($id);
+    return view('Admin.Contact.edit' , ['contact' => $contacts]);
 }
 public function contact_update(Request $request , $id)
 {

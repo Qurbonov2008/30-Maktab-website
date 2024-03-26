@@ -16,7 +16,8 @@
     <div class="container my-5">
         <h2>Mijozni yangilash</h2>
 
-        <form method="put" action="{{ route('contact.update', $contact->id) }}">
+        <form method="post" action="{{ route('contact.update')}} " >
+            @method('PUT')
             @csrf
             <div class="col-sm-6">
             </div>

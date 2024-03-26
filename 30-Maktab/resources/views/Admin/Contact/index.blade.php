@@ -41,7 +41,7 @@
                         <th>{{$contact['subject']}}</th>
                         <th>{{$contact['message']}}</th>
                         <td>
-                            <a class='btn btn-primary btn-sm'  href="{{url('get_update')}}">Tahrirlash</a>
+                            <a class='btn btn-primary btn-sm'  href="{{url('get_update/'.$contact['id'])}}">Tahrirlash</a>
                             <a class='btn btn-danger btn-sm' href="{{url('delete')}}">O'chirish</a>
                         </td>
                         </tr>

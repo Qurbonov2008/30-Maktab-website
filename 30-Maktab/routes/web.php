@@ -45,5 +45,5 @@ Route::post('new_contact' , [ContactController::class , 'new_contact'])->name('n
 // delete function
 Route::delete('delete{id}' , [ContactController::class , 'delete']);
 // update
-Route::get('get_update' , [ContactController::class , 'get_update'])->name('get_update');
+Route::get('get_update/{id}' , [ContactController::class , 'get_update'])->name('get_update');
 Route::put('contact.update' , [ContactController::class , 'contact_update'])->name('contact.update');
