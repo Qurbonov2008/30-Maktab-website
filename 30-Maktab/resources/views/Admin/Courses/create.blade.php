@@ -9,16 +9,33 @@
 </head>
 <body>
     <div class="container my-5">
-        <h2>Email yaratish</h2>
+        <h2>Yangi kurs</h2>
 <div>
     </div>
-        <form action="{{route('new_email')}}" method="POST">
+        <form action="{{route('new_course')}}" method="POST">
             @csrf
             <div class="row mb-3">
-            <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">email</label>
+                <label class="col-sm-3 col-form-label">Image</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="email" required>
+                    <input type="text" class="form-control" name="image"required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Vaqti</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="time" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Nomi</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="name" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Puli</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="money" required>
                 </div>
             </div>
             <div class="row mb-3">
@@ -26,7 +43,7 @@
                     <button type="submit" class="btn btn-primary">Joylash</button>
                 </div>
                 <div class="col-sm-3 d-grid">
-                    <a class="btn btn-outline-primary" href="{{url('Admin_contact')}}" role="button">
+                    <a class="btn btn-outline-primary" href="{{url('Admin_course')}}" role="button">
                         Bekor qilish</a>
                 </div>
             </div>

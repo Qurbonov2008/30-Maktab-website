@@ -13,6 +13,7 @@
 <div>
     </div>
         <form action="{{route('new_contact')}}" method="POST">
+            @csrf
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label">name</label>
                 <div class="col-sm-6">

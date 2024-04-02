@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Sign_up extends Model
 {
     use HasFactory;
-    protected $fillable = ['name' ,'email' , 'subject'];
+    protected $fillable = ['name','class','email','subject'];
 }

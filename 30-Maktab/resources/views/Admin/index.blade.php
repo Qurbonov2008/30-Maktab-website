@@ -26,7 +26,10 @@
 <body style="text-align: center">
   <h1>Admin panel</h1>
   <a href="{{url('Admin_contact')}}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Contact</a>
-  <a href="{{url('')}}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Contact</a>
+  <a href="{{url('Admin_email')}}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Email</a>
+  <a href="{{url('Admin_teachers')}}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">O'qituvchilar</a>
+  <a href="{{url('Admin_course')}}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Kurslar</a>
+
 </body>
 
 </html>

@@ -26,7 +26,7 @@
                 <span class="login100-form-title p-b-41">
                     Kirish
                 </span>
-                <form action="register" method="POST" class="login100-form validate-form p-b-33 p-t-5">
+                <form action="{{url('authenticate')}}" method="POST" class="login100-form validate-form p-b-33 p-t-5">
                     @csrf
                     <div class="wrap-input100 validate-input" data-validate = "Enter username">
                         <input class="input100" type="text" name="name" placeholder="Ismingiz">

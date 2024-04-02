@@ -5,9 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class ContactController extends Controller
 {
+    public function conatact()
+    {
+        return view('contact');
+    }
     public function index()
     {
         $contacts = Contact::all();
@@ -69,43 +74,43 @@ class ContactController extends Controller
         return redirect()->intended('Admin_contact');
     }
  
-public function delete($id)
+public function delete(Contact $contact)
 {
-    $contact = Contact::findOrFail($id);
+    
     $contact->delete();
 
-    return redirect()->route('Admin.Contact.index');
+    return redirect()->intended('Admin_ contact');
 }
 public function get_update($id)
 {
     $contacts = Contact::find($id);
     return view('Admin.Contact.edit' , ['contact' => $contacts]);
 }
-public function contact_update(Request $request , $id)
+public function contact_update(Request $request , int $id)
 {
+    {
+        $validator = Validator::make(
+            $request->all(),
+            [
+                "id" => "required",
+                "name" => "required",
+                "email" => "required",
+                "subject" => "required",
+                "message" => "required",
+            ]
+        );
 
-// Validate qilish
-$request->validate([
-    'name' => 'required|string|max:25',
-    'email' => 'required|string|email|max:25',
-    'subject' => 'required|string|max:30',
-    'message' => 'required|string|max:30'
-]);
+        $Product = Contact::where("id", $id)->first();
+        $Product->update([
+            "id" => $request->id,
+            "name" => $request->name,
+            "email" => $request->email,
+            "subject" => $request->subject,
+            "message" => $request->message,
+        ]);
 
-// Ma'lum bir kontakt obyektini topamiz
-$contact = Contact::findOrFail($id);
-
-// Ma'lumotlarni o'zgartiramiz
-$contact->name = $request->input('name');
-$contact->email = $request->input('email');
-$contact->subject = $request->input('subject');
-$contact->message = $request->input('message');
-
-// Ma'lumotlarni saqlash
-$contact->save();
-
-// Foydalanuvchini yangilangan ma'lumotlarni ko'rishga yo'naltiramiz
-return redirect()->route('contacts.index')->with('success', 'Kontakt ma\'lumotlari muvaffaqiyatli yangilandi');
+        return redirect()->intended('Admin_email');
+    }
 }
 
 }

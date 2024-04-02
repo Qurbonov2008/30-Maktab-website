@@ -16,6 +16,7 @@ class SignUpController extends Controller
                 "name" => "required",
                 "email" => "required",
                 "subject" => "required",
+                "class" => 'required'
             ]
         );
 
@@ -26,12 +27,13 @@ class SignUpController extends Controller
                 "name" => $request->name,
                 "email" => $request->email,
                 "subject" => $request->subject,
+                "class" => $request->class,
 
             ]);
         }
       
 
-        return view('index');
+        return redirect()->intended('/');
         
     }
     public function sign(Request $request)
@@ -42,6 +44,7 @@ class SignUpController extends Controller
                 "name" => "required",
                 "email" => "required",
                 "subject" => "required",
+                "class" => "required"
             ]
         );
 
@@ -53,6 +56,7 @@ class SignUpController extends Controller
                 "name" => $request->name,
                 "email" => $request->email,
                 "subject" => $request->subject,
+                "class" => $request->class,
 
             ]);
         }
@@ -61,8 +65,5 @@ class SignUpController extends Controller
         return view('about');
         
     }
-    public function show()
-    {
-        return view('login');
-    }
+    
 }

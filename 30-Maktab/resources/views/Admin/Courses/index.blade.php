@@ -21,29 +21,29 @@
 </div>
             <div class="form-group">
                 
-                <a class="btn btn-primary" href="{{route('get_contact')}}" role="button">Foydalanuvchi yaratish</a>
+                <a class="btn btn-primary" href="{{route('get_course')}}" role="button">Foydalanuvchi yaratish</a>
                     <br>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Ism</th>
-                                <th>Email</th>
-                                <th>Fan</th>
-                                <th>Izoh</th>
+                                <th>Image</th>
+                                <th>Vaqti</th>
+                                <th>Nomi</th>
+                                <th>Puli</th>
                             </tr>
                         </thead>
-                        @foreach($contacts as $contact)
+                        @foreach($courses as $course)
                         <tbody>
                             <tr>
-                            <th>{{$contact['id']}}</th>
-                            <th>{{$contact['name']}}</th>
-                            <th>{{$contact['email']}}</th>
-                            <th>{{$contact['subject']}}</th>
-                            <th>{{$contact['message']}}</th>
+                            <th>{{$course['id']}}</th>
+                            <th>{{$course['image']}}</th>
+                            <th>{{$course['time']}}</th>
+                            <th>{{$course['name']}}</th>
+                            <th>{{$course['money']}}</th>
                             <td>
-                                <a class='btn btn-primary btn-sm'  href="{{url('get_update/'.$contact['id'])}}">Tahrirlash</a>
-                                <form action="{{url('delete/' , ['contact' => $contact->id])}}" method="POST">
+                                <a class='btn btn-primary btn-sm'  href="">Tahrirlash</a>
+                                <form action="" method="POST">
                                     @csrf
                                 @method('DELETE')
                                 <button type="submit" class='btn btn-danger btn-sm' >O'chirish</button>

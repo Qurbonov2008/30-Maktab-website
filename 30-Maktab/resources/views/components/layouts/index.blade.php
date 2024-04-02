@@ -82,18 +82,18 @@
                     id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-toggle="dropdown">Web Dizayn <i
+                            <a href="#" class="nav-link" data-toggle="dropdown">Dasturlash tili<i
                                     class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                                 <a href="" class="dropdown-item">HTML</a>
                                 <a href="" class="dropdown-item">CSS</a>
-                                <a href="" class="dropdown-item">jQuery</a>
+                                <a href="" class="dropdown-item">PHP</a>
                             </div>
                         </div>
-                        <a href="" class="nav-item nav-link">Apps Design</a>
-                        <a href="" class="nav-item nav-link">Marketing</a>
-                        <a href="" class="nav-item nav-link">Research</a>
-                        <a href="" class="nav-item nav-link">SEO</a>
+                        <a href="" class="nav-item nav-link">Java</a>
+                        <a href="" class="nav-item nav-link">PHP</a>
+                        <a href="" class="nav-item nav-link">C++</a>
+                        <a href="" class="nav-item nav-link">Pythone</a>
 
                     </div>
                 </nav>
@@ -108,18 +108,18 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav py-0">
-                            <a href="/" class="nav-item nav-link">Home</a>
-                            <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
-                            <a href="{{ route('course') }}" class="nav-item nav-link">Courses</a>
-                            <a href="{{ route('teacher') }}" class="nav-item nav-link">Teachers</a>
+                            <a href="/" class="nav-item nav-link">Bosh sahifa</a>
+                            <a href="{{ route('about') }}" class="nav-item nav-link">Biz haqimizda</a>
+                            <a href="{{ route('course') }}" class="nav-item nav-link">Kurslar</a>
+                            <a href="{{ route('teacher') }}" class="nav-item nav-link">O'qituvchilar</a>
                             <div class="nav-item dropdown">
                                 <div class="dropdown-menu rounded-0 m-0">
                                 </div>
                             </div>
-                            <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
+                            <a href="{{ route('contact') }}" class="nav-item nav-link">Bizga bog'lanish</a>
                         </div>
                         @auth
-                            <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Salom $name</a>
+                            <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">30-Maktab sayitiga xush kelibsiz</a>
                         @else
                             <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
                                 href="{{ route('login') }}">Kirish</a>

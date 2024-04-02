@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class PopularCourses extends Model
 {
     use HasFactory;
+    protected $fillable = ['image' , 'time' , 'name' , 'money'];
 }
