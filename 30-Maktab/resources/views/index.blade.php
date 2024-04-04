@@ -13,7 +13,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="img/carousel-2.jpg"
+                    <img class="position-relative w-100" src="img/carousel-1.jpg"
                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="img/course-5.jpg"
+                    <img class="position-relative w-100" src="img/carousel-2.jpg"
                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
@@ -163,7 +163,6 @@
                                         <option value="Ona tili">Ona tili</option required>
                                         <option value="Informaatika">Informatika</option required>
                                         <option value="Adabuyot">Adabiyot</option required>
-
                                     </select>
                                 </div>
                                 <div>

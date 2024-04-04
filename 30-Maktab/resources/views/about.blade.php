@@ -23,7 +23,7 @@
                         mumkin misol uchun PHP , C++ , Pythone , Java kabi dasturlash tillari. Faqat u yerdagi barcha
                         ma'lumotlar ingiliz tilida bo'ladi. Shu sababli ingiliz tilini bilishingiz kerak.
                     </p>
-                    <a href="w3school" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">O'qish
+                    <a href="https://www.google.com/search?q=w3schools&rlz=1C1JJTC_ruUZ1095UZ1095&oq=&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYQDIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgxNzAyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">O'qish
                         uchun</a>
                 </div>
             </div>

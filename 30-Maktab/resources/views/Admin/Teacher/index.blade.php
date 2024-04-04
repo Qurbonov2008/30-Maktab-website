@@ -18,6 +18,7 @@
     <br>
     <div class="form-group">
         <a class="btn btn-primary" href="{{ route('get_teacher') }}" role="button">Teacher yaratish</a>
+        <a class="btn btn-primary" href="{{ route('Admin') }}" role="button">Orqaga qaytish</a>
         <br>
         <table class="table">
             <thead>
