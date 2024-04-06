@@ -73,44 +73,39 @@ class ContactController extends Controller
         }
         return redirect()->intended('Admin_contact');
     }
- 
-public function delete(Contact $contact)
-{
-    
-    $contact->delete();
 
-    return redirect()->intended('Admin_ contact');
-}
-public function get_update($id)
-{
-    $contacts = Contact::find($id);
-    return view('Admin.Contact.edit' , ['contact' => $contacts]);
-}
-public function contact_update(Request $request , int $id)
-{
+    public function delete(Contact $contact)
     {
-        $validator = Validator::make(
-            $request->all(),
-            [
-                "id" => "required",
-                "name" => "required",
-                "email" => "required",
-                "subject" => "required",
-                "message" => "required",
-            ]
-        );
-
-        $Product = Contact::where("id", $id)->first();
-        $Product->update([
-            "id" => $request->id,
-            "name" => $request->name,
-            "email" => $request->email,
-            "subject" => $request->subject,
-            "message" => $request->message,
-        ]);
-
-        return redirect()->intended('Admin_email');
+       $contact->delete();
     }
-}
+    public function get_update($id)
+    {
+        $contacts = Contact::find($id);
+        return view('Admin.Contact.edit', ['contact' => $contacts]);
+    }
+    public function contact_update(Request $request)
+    { {
+            $validator = Validator::make(
+                $request->all(),
+                [
+                    "id" => "required",
+                    "name" => "required",
+                    "email" => "required",
+                    "subject" => "required",
+                    "message" => "required",
+                ]
+            );
 
+            $Product = Contact::first();
+            $Product->update([
+                "id" => $request->id,
+                "name" => $request->name,
+                "email" => $request->email,
+                "subject" => $request->subject,
+                "message" => $request->message,
+            ]);
+
+            return redirect()->intended('Admin_contact');
+        }
+    }
 }

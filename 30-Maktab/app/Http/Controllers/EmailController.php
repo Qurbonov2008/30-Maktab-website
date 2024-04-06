@@ -53,7 +53,7 @@ class EmailController extends Controller
         $email = Email::find($id);
         return view('Admin.Email.edit', ['email' => $email]);
     }
-    public function email_update(Request  $request, int $id)
+    public function email_update(Request  $request)
     { {
             $validator = Validator::make(
                 $request->all(),
@@ -62,33 +62,16 @@ class EmailController extends Controller
                 ]
             );
         }
-        $Email =  Email::where('id', $id)->first();
+        $Email =  Email::first();
         $Email->update(
             [
                 'id' => $request->id,
                 'email' => $request->email,
             ]
         );
+        return redirect()->intended('Admin_email');
     }
-    public function email_post_update(Request $request)
-    {
-        $validator = Validator::make(
-            $request->all(),
-            [
-                'id' => 'required',
-                'email' => 'required'
-            ]
-        );
-        if (!isset($validator)) {
-            return redirect()->intended('get_update_email');
-        } else {
-            Email::update([
-                'id' => $request->id,
-                'email' => $request->email,
-            ]);
-        }
-    }
-
+ 
 
     public function delete(Email $email)
     {
