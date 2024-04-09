@@ -144,9 +144,16 @@
                                         value="{{ old('name') }}" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" name="class"
-                                        placeholder="Sizning sinifingiz" required="required"
-                                        value="{{ old('class') }}" />
+                                    <select name="class" class="custom-select border-0 px-4" style="height: 47px;"
+                                        value="{{ old('class') }}" required>
+                                        <option selected>Sinifingizni tanlang</option required>
+                                        <option value="5-A">5-A</option required>
+                                        <option value="5-B">5-B</option required>
+                                        <option value="6-A">6-A</option required>
+                                        <option value="6-B">6-B</option required>
+                                        <option value="Informaatika">Informatika</option required>
+                                        <option value="Adabuyot">Adabiyot</option required>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control border-0 p-4" name="email"

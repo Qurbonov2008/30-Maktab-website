@@ -23,7 +23,8 @@
                         mumkin misol uchun PHP , C++ , Pythone , Java kabi dasturlash tillari. Faqat u yerdagi barcha
                         ma'lumotlar ingiliz tilida bo'ladi. Shu sababli ingiliz tilini bilishingiz kerak.
                     </p>
-                    <a href="https://www.google.com/search?q=w3schools&rlz=1C1JJTC_ruUZ1095UZ1095&oq=&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYQDIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgxNzAyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">O'qish
+                    <a href="https://www.google.com/search?q=w3schools&rlz=1C1JJTC_ruUZ1095UZ1095&oq=&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYQDIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgxNzAyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                        class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">O'qish
                         uchun</a>
                 </div>
             </div>
@@ -58,16 +59,30 @@
                                 @csrf
                                 <div class="form-group">
                                     <input type="text" class="form-control border-0 p-4" name="name"
-                                        placeholder="Sizning ismingiz" required="required" value="{{ old('name') }}" />
+                                        placeholder="Sizning ismingiz" required="required"
+                                        value="{{ old('name') }}" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" name="class"
-                                        placeholder="Sizning sinifingiz" required="required"
-                                        value="{{ old('class') }}" />
+                                    <select name="class" class="custom-select border-0 px-4" style="height: 47px;"
+                                        value="{{ old('class') }}" required>
+                                        <option selected>Sinifingizni tanlang</option required>
+                                        <option value="5-A">5-A</option required>
+                                        <option value="5-B">5-B</option required>
+                                        <option value="6-A">6-A</option required>
+                                        <option value="6-B">6-B</option required>
+                                        <option value="7-A">7-A</option required>
+                                        <option value="7-B">7-B</option required>
+                                        <option value="8-A">8-A</option required>
+                                        <option value="8-B">8-B</option required>
+                                        <option value="9-A">9-A</option required>
+                                        <option value="9-B">9-B</option required>
+
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control border-0 p-4" name="email"
-                                        placeholder="Sizning emailingiz" required="required" value="{{ old('email') }}" />
+                                        placeholder="Sizning emailingiz" required="required"
+                                        value="{{ old('email') }}" />
                                 </div>
                                 <div class="form-group">
                                     <select name="subject" class="custom-select border-0 px-4" style="height: 47px;"

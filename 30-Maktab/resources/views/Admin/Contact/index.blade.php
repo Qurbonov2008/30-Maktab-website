@@ -44,11 +44,11 @@
                             <th>{{$contact['message']}}</th>
                             <td>
                                 <a class='btn btn-primary btn-sm'  href="{{url('get_update/'.$contact['id'])}}">Tahrirlash</a>
-                                <form action="{{url('delete/' , ['contact' => $contact->id])}}" method="POST">
+                                <form action="{{ url('contact.delete', $contact) }}" method="POST">
                                     @csrf
-                                @method('DELETE')
-                                <button type="submit" class='btn btn-danger btn-sm' >O'chirish</button>
-                            </form>
+                                    @method('DELETE')
+                                    <button type="submit" class='btn btn-danger btn-sm'>Delete</button>
+                                </form>
                         </td>
                     </tr>
                 </tbody>

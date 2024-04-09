@@ -44,7 +44,7 @@ Route::get('Admin_contact', [ContactController::class, 'index'])->name('Admin_Co
 Route::get('get_contact', [ContactController::class, 'get_contact'])->name('get_contact');
 Route::post('new_contact', [ContactController::class, 'new_contact'])->name('new_contact');
 // delete function
-Route::delete('delete/{id}', [ContactController::class, 'delete'])->name('delete');
+Route::delete('contact.delete/{id}', [ContactController::class, 'delete'])->name('delete');
 // update
 Route::get('get_update/{id}', [ContactController::class, 'get_update'])->name('get_update');
 Route::put('contact.update', [ContactController::class, 'contact_update'])->name('contact.update');
@@ -74,3 +74,6 @@ Route::get('Admin_course', [PopularCoursesController::class, 'index'])->name('Ad
 // Yangi kurs qo'shish uchun route
 Route::get('get_course', [PopularCoursesController::class, 'get_course'])->name('get_course');
 Route::post('new_course', [PopularCoursesController::class, 'new_course'])->name('new_course');
+
+
+Route::get('test' , [TestController::class , 'index'])->name('test');

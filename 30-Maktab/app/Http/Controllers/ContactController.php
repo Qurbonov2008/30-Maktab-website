@@ -77,6 +77,8 @@ class ContactController extends Controller
     public function delete(Contact $contact)
     {
        $contact->delete();
+
+    //    return redirect()->intended('Admin_contact');
     }
     public function get_update($id)
     {
