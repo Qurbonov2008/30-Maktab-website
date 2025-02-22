@@ -14,6 +14,9 @@ class PopularCoursesController extends Controller
         $courses =  PopularCourses::limit(6)->get()->toArray();
 
         return view('courses', ['courses'=>$courses]);
+
+echo "archasi juda zo'r bo'lgan edi o'sha payitlar  a shundaymi";
+
     }
     public function index()
     {
